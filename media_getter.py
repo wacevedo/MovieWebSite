@@ -18,7 +18,7 @@ def get_movie_info(id):
     content_value = get_content(movie)
     info = movie.info()
     title = info['title']
-    runtime = int(info['runtime'])/60
+    runtime = int(info['runtime'])/60  #This is for convert the minutes to hours
     movie_value = (title, runtime) + content_value
     return movie_value
 
