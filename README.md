@@ -7,12 +7,15 @@ Is Using a Modified Starter Code called fresh_tomatoes.py of [Adarsh Nair](https
 https://github.com/adarsh0806/ud036_StarterCode/blob/master/fresh_tomatoes.py
 
 Content Comes from:
-![alt tag](https://www.themoviedb.org/assets/41bdcf10bbf6f84c0fc73f27b2180b95/images/v4/logos/91x81.png)
+.
+![https://www.themoviedb.org/](https://www.themoviedb.org/assets/41bdcf10bbf6f84c0fc73f27b2180b95/images/v4/logos/91x81.png)
+.
 Thanks for the content.
 
 ## HOW TO RUN IT:
+Write your [The movie db](https://www.themoviedb.org/) API key on tmdb_API_KEY.conf file.
 
-Just go to the directory of the project and run on the console:
+Then just go to the directory of the project and run on the console:
 ```
 python entertaiment_center.py
 
