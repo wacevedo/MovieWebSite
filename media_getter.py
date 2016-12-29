@@ -1,6 +1,7 @@
 import tmdbsimple as tmdb
+from conf_getter import get_API_KEY
 
-tmdb.API_KEY = '093181dc8a621a849d2a4d9913814d91'
+tmdb.API_KEY = get_API_KEY()
 base_img_url = 'https://image.tmdb.org/t/p/w300_and_h450_bestv2'
 base_youtube_url = 'https://www.youtube.com/watch?v='
 

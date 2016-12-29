@@ -1,18 +1,9 @@
-import media
-import fresh_tomatoes
-import media_getter
+from fresh_tomatoes import open_movies_page
+from media import Movie, Tv_Show
+from media_getter import get_movie_info, get_tv_info
 
-furious = media.Movie(*media_getter.get_movie_info(168259))
-deadpool = media.Movie(*media_getter.get_movie_info(293660))
-insidious = media.Movie(*media_getter.get_movie_info(49018))
-now_you = media.Movie(*media_getter.get_movie_info(291805))
-matrix = media.Movie(*media_getter.get_movie_info(603))
-time = media.Movie(*media_getter.get_movie_info(122906))
-love = media.Tv_Show(*media_getter.get_tv_info(53606))
-vikings= media.Tv_Show(*media_getter.get_tv_info(44217))
-walking = media.Tv_Show(*media_getter.get_tv_info(1402))
+movie_ids = [168259, 293660, 49018, 291805, 603, 122906]
+tv_show_ids = [53606, 44217, 1402]
 
-movies = [matrix, time, insidious, furious,
-		  deadpool, now_you, love, vikings, walking]
-
-fresh_tomatoes.open_movies_page(movies)
+open_movies_page([Movie(*get_movie_info(i)) for i in movie_ids] + 
+				 [Tv_Show(*get_tv_info(i)) for i in tv_show_ids])

@@ -1,5 +1,5 @@
 import tmdbsimple as tmdb
-tmdb.API_KEY = '093181dc8a621a849d2a4d9913814d91'
+tmdb.API_KEY = ''
 movie = tmdb.Movies(122906)
 response = movie.info()
 # overview for storyline
